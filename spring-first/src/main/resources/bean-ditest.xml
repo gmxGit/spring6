@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    id表示bean的唯一标识
+      class属性：要创建对象所在类的全路径（包名称+类名称）-->
+    <bean id="dept" class="com.itguigu.spring06.Di.Dept">
+        <property name="dname" value="人社部"></property>
+    </bean>
+
+    <bean id="emp" class="com.itguigu.spring06.Di.Emp">
+        <!--    普通属性注入-->
+        <property name="ename" value="lucy"></property>
+        <property name="age" value="50"></property>
+        <!--    注入对象类型属性-->
+        <property name="dept" ref="dept"></property>
+
+    </bean>
+
+</beans>
