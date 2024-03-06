@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!--    id表示bean的唯一标识
+    class属性：要创建对象所在类的全路径（包名称+类名称）-->
+  <bean id="user" class="com.itguigu.spring6.iocxml.User">
+    <property name="name" value="小王"></property>
+    <property name="age" value="18"></property>
+  </bean>
+</beans>
