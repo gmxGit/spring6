@@ -1,5 +1,9 @@
 package com.itguigu.spring6.iocxml;
 
+ import org.springframework.stereotype.Controller;
+
+//@Component
+@Controller
 public class User {
     private String name;
     private Integer age;
